@@ -9,7 +9,6 @@ public class Client {
 	public static void main(String[] zero) {
 		
 		Socket socket;
-		int a;
 		try {
 		
 		     socket = new Socket(InetAddress.getLocalHost(),2009);	
