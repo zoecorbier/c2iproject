@@ -18,15 +18,3 @@ public class Serie implements java.io.Serializable {
        return sb.append(nom).append(" ").append(prenom).toString() ;
    }
 }
-//////dans une méthode main
-////// on simplifie le code en retirant la gestion des exceptions
-//File fichier =  new File("tmp/serie.ser") ;
-
-///// ouverture d'un flux sur un fichier
-//ObjectInputStream ois =  new ObjectInputStream(new FileInputStream(fichier)) ;
-		
-/////// désérialization de l'objet
-//Serie m = (Serie)ois.readObject() ;
-//System.out.println(m) ;
-
-//fermeture du flux dans le bloc finally
