@@ -2,7 +2,7 @@ package fr.um3.c2iproject;
 import java.io.IOException;
 import java.net.*;
 
-public class Client {
+public class Identification {
 
 	public static void main(String[] zero){
 		
