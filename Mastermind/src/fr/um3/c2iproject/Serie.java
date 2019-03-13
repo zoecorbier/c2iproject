@@ -6,7 +6,7 @@ public class Serie implements java.io.Serializable {
 
     private String nom, prenom ;
 
-    private  int donnees ;
+   
 
     public Serie(String nom, String prenom) {
        this.nom = nom ;
