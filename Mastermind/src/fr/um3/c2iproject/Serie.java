@@ -1,14 +1,14 @@
 package fr.um3.c2iproject;
 
-public class Marin implements java.io.Serializable {
+public class Serie implements java.io.Serializable {
 
     private  static  final  long serialVersionUID =  1350092881346723535L;
 
     private String nom, prenom ;
 
-    private  int salaire ;
+    private  int donnees ;
 
-    public Marin(String nom, String prenom) {
+    public Serie(String nom, String prenom) {
        this.nom = nom ;
        this.prenom = prenom ;
    }
@@ -20,13 +20,13 @@ public class Marin implements java.io.Serializable {
 }
 //////dans une méthode main
 ////// on simplifie le code en retirant la gestion des exceptions
-//File fichier =  new File("tmp/marin.ser") ;
+//File fichier =  new File("tmp/serie.ser") ;
 
 ///// ouverture d'un flux sur un fichier
 //ObjectInputStream ois =  new ObjectInputStream(new FileInputStream(fichier)) ;
 		
 /////// désérialization de l'objet
-//Marin m = (Marin)ois.readObject() ;
+//Serie m = (Serie)ois.readObject() ;
 //System.out.println(m) ;
 
-///// fermeture du flux dans le bloc finally
+//fermeture du flux dans le bloc finally
