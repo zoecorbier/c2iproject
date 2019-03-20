@@ -11,7 +11,7 @@ public class Serveur {
 		socket = new ServerSocket(2009);
 		Thread t = new Thread(new Accepter_clients(socket));
 		t.start();
-		System.out.println("Bienvenu dans le mastermind");
+		System.out.println("Mes employeurs sont prêts !");
 		
 		} catch (IOException e) {
 			
@@ -33,8 +33,8 @@ class Accepter_clients implements Runnable {
 
 	        try {
 	        	while(true){
-			  socket = socketserver.accept(); 
-	                  System.out.println("Le client numéro "+nbrclient+ " est connecté !");
+			  socket = socketserver.accept(); // Un client se connecte on l'accepte
+	                  System.out.println("Le client numero "+nbrclient+ " est connecte !");
 	                  nbrclient++;
 	                  socket.close();
 	        	}
@@ -45,5 +45,7 @@ class Accepter_clients implements Runnable {
 		}
 
 	}
+
+
 
 
