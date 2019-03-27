@@ -1,4 +1,4 @@
-package fr.um3.c2iproject;
+package fr.um3.C2iprojet.connectionclient;
 import java.io.IOException;
 import java.net.*;
 
