@@ -1,5 +1,5 @@
 package fr.um3.c2iproject;
 
-public class Classement {
+public class Menu {
 
 }

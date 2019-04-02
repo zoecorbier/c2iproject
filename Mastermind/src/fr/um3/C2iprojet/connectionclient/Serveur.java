@@ -1,4 +1,4 @@
-package fr.um3.c2iproject;
+package fr.um3.C2iprojet.connectionclient;
 import java.io.IOException;
 import java.net.*;
 
@@ -11,7 +11,7 @@ public class Serveur {
 		socket = new ServerSocket(2009);
 		Thread t = new Thread(new Accepter_clients(socket));
 		t.start();
-		System.out.println("Mes employeurs sont prêts !");
+		System.out.println("Mes employeurs sont prÃªts !");
 		
 		} catch (IOException e) {
 			
@@ -34,7 +34,7 @@ class Accepter_clients implements Runnable {
 	        try {
 	        	while(true){
 			  socket = socketserver.accept(); // Un client se connecte on l'accepte
-	                  System.out.println("Le client numéro "+nbrclient+ " est connecté !");
+	                  System.out.println("Le client numero "+nbrclient+ " est connecte !");
 	                  nbrclient++;
 	                  socket.close();
 	        	}
@@ -43,7 +43,10 @@ class Accepter_clients implements Runnable {
 				e.printStackTrace();
 			}
 		}
+		
 
 	}
+
+
 
 
