@@ -19,14 +19,14 @@ public class Classement {
 		NomScore = nomScore;
 	}
 
-	public ArrayList<Number> classementScore (){
-	for (int i=0; i< this.getNbPartie(); i++) {
-		if 
-	}
+	//public ArrayList<Number> classementScore (){
+	//for (int i=0; i< this.getNbPartie(); i++) {
+	//	if 
+	//}
 		
 	}
 			
 	
 	
 
-}
+

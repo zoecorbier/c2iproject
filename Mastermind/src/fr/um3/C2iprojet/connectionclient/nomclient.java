@@ -22,7 +22,8 @@ public class nomclient {
 				else {
 					Scanner k= new Scanner (System.in);
 					System.out.println("Veuillez saisir un autre nom, ce nom est déjà utilisé");
-					String e=s.nextLine();
+					//Nom o=s.nextLine();
+					//e=o;
 				}
 				}
 			else if(i== Noms.size()){
