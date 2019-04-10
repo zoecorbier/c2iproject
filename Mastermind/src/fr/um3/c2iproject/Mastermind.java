@@ -108,9 +108,13 @@ public class Mastermind {
  
             
         }while(!victoire && count < ESSAIS_MAX);
-        if(count == ESSAIS_MAX)													// Le compteur compte chaque essai et arr�te le jeu si l'on arrive au nombre d'essais max
-            return "Malheuresement vous avez �puis�s vos " + ESSAIS_MAX + " essais, la partie est termin�e";
-        else {
+        if(count == ESSAIS_MAX) {												// Le compteur compte chaque essai et arr�te le jeu si l'on arrive au nombre d'essais max
+        	String solutionString = "";
+        	for(int i = 0 ; i < solution.length ; i ++) {
+        		solutionString += solution[i];
+        	}
+            return "Malheuresement vous avez epuises vos " + ESSAIS_MAX + " essais, la partie est terminee la réponse est "+ solutionString;
+        }else {
         	sc.close();
         	score=count;
         	return "Victoire En seulement "+count+ " coups";		// Le jeu donne le nombre d'essai qu'il aura fallu au joueur pour r�ussir la partie
