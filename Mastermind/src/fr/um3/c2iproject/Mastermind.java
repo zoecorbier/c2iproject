@@ -111,9 +111,10 @@ public class Mastermind {
         if(count == ESSAIS_MAX) {												// Le compteur compte chaque essai et arr�te le jeu si l'on arrive au nombre d'essais max
         	String solutionString = "";
         	for(int i = 0 ; i < solution.length ; i ++) {
-        		solutionString += solution[i];
+        		solutionString += solution[i];  // on transforme solution en string pour pouvoir l'afficher quand le joueur perds
         	}
-            return "Malheuresement vous avez epuises vos " + ESSAIS_MAX + " essais, la partie est terminee la réponse est "+ solutionString;
+            return "Malheuresement vous avez epuise vos " + ESSAIS_MAX + " essais, la partie est terminee la réponse est "+ solutionString;
+            // on retourne le résultat attendu si la personne a perdue 
         }else {
         	sc.close();
         	score=count;
