@@ -6,7 +6,7 @@ import java.util.List;
 
 
 
-public class nomclient {
+public class Nomclient {
 	private List<Nom> Noms =new ArrayList<Nom>();
 	private Nom e= new Nom();// prend en compte un nom rentré par un client 
 	
