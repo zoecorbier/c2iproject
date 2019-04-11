@@ -16,7 +16,6 @@ public class Mastermind {
     private final int ESSAIS_MAX= 12;
     private final int[] solution= new int[NB_CHIFFRES];
     private int score=0;
-    private Classement classement= new Classement();
     
     public Scanner getSc() {
 		return sc;
@@ -121,28 +120,7 @@ public class Mastermind {
         	return "Victoire En seulement "+count+ " coups";		// Le jeu donne le nombre d'essai qu'il aura fallu au joueur pour r�ussir la partie
         }
     }
-        public void classeScore(int score) {
-        	
-        	this.classement.getScore().add(score);
-        	
-        	boolean tab_en_ordre = false;
-            int taille = classement.getScore().size();
-            while(!tab_en_ordre)
-            {
-                tab_en_ordre = true;
-                for(int i=0 ; i < taille-1 ; i++)
-                {
-                    if(classement.getScore().get(i) > classement.getScore().get(i+1))
-                    {
-                        
-                        int x;
-                        Collections.swap(classement.getScore(), i, i+1);
-                        tab_en_ordre = false;
-                    }
-                }
-                taille--;
-            }
-    }
+       
     
     
   

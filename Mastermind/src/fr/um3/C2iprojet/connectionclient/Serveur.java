@@ -16,7 +16,7 @@ public class Serveur {
 	public static void main(String[] args) throws Exception {
 			
 			
-		ServerSocket s = new ServerSocket(3); // 6020 => port de l'application
+		ServerSocket s = new ServerSocket(19); // 6020 => port de l'application
 		System.out.println("START");
 		Socket soc = s.accept(); // accepte connexion
 		BufferedReader ins = new BufferedReader(

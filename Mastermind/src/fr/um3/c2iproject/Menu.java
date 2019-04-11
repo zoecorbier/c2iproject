@@ -1,5 +1,7 @@
 package fr.um3.c2iproject;
 
+import java.util.Scanner;
+
 import fr.um3.C2iprojet.connectionclient.Classement;
 
 public class Menu {
@@ -17,6 +19,25 @@ public class Menu {
     	
 		
 	}
+	
+	public void findepartie () {
+		Scanner h = new Scanner(System.in);
+		System.out.println("Voulez-vous rejouer? Si oui entrer 'J'");
+		System.out.println("Voulez-vous quitter ? Si oui entrer 'Q'");
+		System.out.println("Voulez-vous acceder au classement? Si oui entrer 'C'");
+		String l= h.nextLine();
+		if ("J".equals(l)) {
+			this.creerPartie();
+		}
+		if("Q".equals(l)) {
+			System.out.println("Aurevoir.");
+			
+		}
+		if("C".equals(l)) {
+			this.classeScore();
+		}
+	}
+
 	
 	public void ajoutScore() {
 		
