@@ -3,18 +3,21 @@ package fr.um3.c2iproject;
 import java.util.Scanner;
 
 import fr.um3.C2iprojet.connectionclient.Classement;
+import fr.um3.C2iprojet.connectionclient.Nomclient;
 
 public class Menu {
 	public int NbPartie = 0;
-	public Classement clas= new Classement();
+	public Classement classmnt= new Classement();
+	private Nomclient N= new Nomclient();
 	
 	
 	public void creerPartie() {
 		Mastermind M= new Mastermind();
 		NbPartie ++;
 		System.out.println(M.Consigne());
+		N.NomListe();
     	System.out.println(M.Jeu());
-    	clas.getScore().add(M.getScore());
+    	classmnt.classeScore(M.getScore(), N);
     	
     	
 		
@@ -28,22 +31,18 @@ public class Menu {
 		String l= h.nextLine();
 		if ("J".equals(l)) {
 			this.creerPartie();
+			this.findepartie();
 		}
 		if("Q".equals(l)) {
 			System.out.println("Aurevoir.");
 			
 		}
 		if("C".equals(l)) {
-			this.classeScore();
+			this.classmnt.AfficheClassement(N);
 		}
 	}
 
 	
-	public void ajoutScore() {
-		
-	}
-
-
 	public int getNbPartie() {
 		return NbPartie;
 	}

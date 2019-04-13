@@ -91,12 +91,16 @@ public class Nomclient {
 			
 			
 			
-			
+		s.close();	
 			
 		}
 		
 		
-
+		public static void main(String[] args) {
+			
+			
+			
+		}
 
 	
 	
