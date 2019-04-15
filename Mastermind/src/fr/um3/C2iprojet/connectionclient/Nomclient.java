@@ -9,7 +9,7 @@ import java.util.List;
 public class Nomclient {
 		//private List<Nom> Noms =new ArrayList<Nom>();
 		/*private Nom e= new Nom();*/
-		// prend en compte un nom rentrÃ© par un client 
+		// prend en compte un nom rentre par un client 
 		
 		private List<String> Noms = new ArrayList<String>();
 		
@@ -52,20 +52,20 @@ public class Nomclient {
 				
 				
 				if(Noms.get(i).equals(c)) {
-					System.out.println("Avez-vous déjà joué ?");
+					System.out.println("Avez-vous deja jou ?");
 					c=s.nextLine();
 					
 					if(c.equals("oui")) {
 						
 						NomJoueur=Noms.get(i);
 						var=true;
-						System.out.println("Nom saisis avec succès");
+						System.out.println("Nom saisis avec succes");
 						
 						
 					}
 					else {
 						
-						System.out.println("Ce nom est déjà utilisé ;(");
+						System.out.println("Ce nom est deja utilise ;(");
 						this.NomListe();
 						
 					}
@@ -86,7 +86,7 @@ public class Nomclient {
 			if(i==Noms.size()) {
 				Noms.add(c);
 				NomJoueur=c;
-				System.out.println("Nom saisis avec succès");
+				System.out.println("Nom saisis avec succes");
 			}
 			
 			
