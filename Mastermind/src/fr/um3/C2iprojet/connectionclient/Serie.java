@@ -1,4 +1,4 @@
-package fr.um3.c2iproject;
+package fr.um3.C2iprojet.connectionclient;
 
 public class Serie implements java.io.Serializable {
 

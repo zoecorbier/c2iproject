@@ -1,9 +1,6 @@
-package fr.um3.c2iproject;
+package fr.um3.C2iprojet.connectionclient;
 
 import java.util.Scanner;
-
-import fr.um3.C2iprojet.connectionclient.Classement;
-import fr.um3.C2iprojet.connectionclient.Nomclient;
 
 public class Menu {
 	public int NbPartie = 0;
@@ -11,33 +8,37 @@ public class Menu {
 	private Nomclient N= new Nomclient();
 	
 	
-	public void creerPartie() {
+	public void creerPartie(Scanner s ) {
 		Mastermind M= new Mastermind();
 		NbPartie ++;
 		System.out.println(M.Consigne());
-		N.NomListe();
+		N.NomListe(s);
     	System.out.println(M.Jeu());
     	classmnt.classeScore(M.getScore(), N);
+    	
     	
     	
 		
 	}
 	
-	public void findepartie () {
-		Scanner h = new Scanner(System.in);
+	public void findepartie (Scanner s) {
+		
 		System.out.println("Voulez-vous rejouer? Si oui entrer 'J'");
 		System.out.println("Voulez-vous quitter ? Si oui entrer 'Q'");
 		System.out.println("Voulez-vous acceder au classement? Si oui entrer 'C'");
-		String l= h.nextLine();
-		if ("J".equals(l)) {
-			this.creerPartie();
-			this.findepartie();
+		System.out.println("OK1");
+		String c=s.nextLine();
+		System.out.println("OK2");
+		if ("J".equals(c)) {
+			this.creerPartie(s);
+			this.findepartie(s);
+			
 		}
-		if("Q".equals(l)) {
+		if("Q".equals(c)) {
 			System.out.println("Aurevoir.");
 			
 		}
-		if("C".equals(l)) {
+		if("C".equals(c)) {
 			this.classmnt.AfficheClassement(N);
 		}
 	}

@@ -6,29 +6,42 @@ import java.util.List;
 
 
 
-public class NomClient {
+public class Nomclient {
+		//private List<Nom> Noms =new ArrayList<Nom>();
+		/*private Nom e= new Nom();*/
+		// prend en compte un nom rentr√© par un client 
+		
 		private List<String> Noms = new ArrayList<String>();
-		private String NomJoueur;
+		
+		
 		public List<String> getNoms() {
 			return Noms;
 		}
+
+
 		public void setNoms(List<String> noms) {
 			Noms = noms;
 		}
+
+
 		public String getNomJoueur() {
 			return NomJoueur;
 		}
+
+
 		public void setNomJoueur(String nomJoueur) {
 			NomJoueur = nomJoueur;
 		}
+
+
+		private String NomJoueur;
 		
 		
 		
 		
-		
-		public void NomListe() {
+		public void NomListe(Scanner s ) {
 			
-			Scanner s = new Scanner(System.in);
+			
 			System.out.println("Veuillez saisir votre nom:");
 			String c= s.nextLine();
 			
@@ -36,27 +49,49 @@ public class NomClient {
 			boolean var=false;
 			
 			while((i<Noms.size()) && (var==false)) {
+				
+				
 				if(Noms.get(i).equals(c)) {
-					System.out.println("Avez-vous deja joue ?");
+					System.out.println("Avez-vous dÈj‡ jouÈ ?");
 					c=s.nextLine();
+					
 					if(c.equals("oui")) {
+						
 						NomJoueur=Noms.get(i);
 						var=true;
-						System.out.println("Nom saisis avec succes");}
+						System.out.println("Nom saisis avec succËs");
+						
+						
+					}
 					else {
-						System.out.println("Ce nom est deja utilise ;(");
-						this.NomListe();}
+						
+						System.out.println("Ce nom est dÈj‡ utilisÈ ;(");
+						this.NomListe(s);
+						
+					}
+					
 				}
+				
+				
+				
 				else{
+					
+					
 					i++;
+					
+					
 				}
 			}
+			
 			if(i==Noms.size()) {
 				Noms.add(c);
 				NomJoueur=c;
-				System.out.println("Nom saisis avec succes");
+				System.out.println("Nom saisis avec succËs");
 			}
-		s.close();	
+			
+			
+			
+	
 			
 		}
 		
