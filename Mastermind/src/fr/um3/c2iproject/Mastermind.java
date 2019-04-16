@@ -165,7 +165,7 @@ public class Mastermind {
         System.out.println("----------------------------");
  
  
-        int[] chiffres = new int[NB_CHIFFRES];   // On creer un tableau contenant les chiffres � trouver
+        int[] chiffres = new int[NB_CHIFFRES];   // On creer un tableau contenant les chiffres a trouver
         boolean victoire = false;				 // On se servira du boolean plus tard
         do {
             System.out.println("Essai n " + (count+1) + "/" + ESSAIS_MAX + " :"); // Cette ligne permet de compter et de montrer au joueur son nombre d'essais restant

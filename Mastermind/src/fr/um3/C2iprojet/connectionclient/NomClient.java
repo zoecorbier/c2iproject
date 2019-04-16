@@ -6,35 +6,22 @@ import java.util.List;
 
 
 
-public class Nomclient {
-		//private List<Nom> Noms =new ArrayList<Nom>();
-		/*private Nom e= new Nom();*/
-		// prend en compte un nom rentre par un client 
-		
+public class NomClient {
 		private List<String> Noms = new ArrayList<String>();
-		
-		
+		private String NomJoueur;
 		public List<String> getNoms() {
 			return Noms;
 		}
-
-
 		public void setNoms(List<String> noms) {
 			Noms = noms;
 		}
-
-
 		public String getNomJoueur() {
 			return NomJoueur;
 		}
-
-
 		public void setNomJoueur(String nomJoueur) {
 			NomJoueur = nomJoueur;
 		}
-
-
-		private String NomJoueur;
+		
 		
 		
 		

@@ -17,7 +17,7 @@ public class Classement {
 			Score = score;
 		}
 		
-		public void AfficheClassement(Nomclient N) {
+		public void AfficheClassement(NomClient N) {
 			
 			
 			System.out.println("Voici le classement du jeu : ");
@@ -31,7 +31,7 @@ public class Classement {
 		}
 		
 		
-		 public void classeScore(int score, Nomclient N) {
+		 public void classeScore(int score, NomClient N) {
 	        	
 	        	this.Score.add(score);
 	        	
