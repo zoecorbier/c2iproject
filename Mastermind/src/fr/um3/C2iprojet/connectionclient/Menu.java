@@ -26,9 +26,7 @@ public class Menu {
 		System.out.println("Voulez-vous rejouer? Si oui entrer 'J'");
 		System.out.println("Voulez-vous quitter ? Si oui entrer 'Q'");
 		System.out.println("Voulez-vous acceder au classement? Si oui entrer 'C'");
-		System.out.println("OK1");
 		String c=s.nextLine();
-		System.out.println("OK2");
 		if ("J".equals(c)) {
 			this.creerPartie(s);
 			this.findepartie(s);
