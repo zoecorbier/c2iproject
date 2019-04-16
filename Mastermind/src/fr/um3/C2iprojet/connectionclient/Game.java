@@ -7,8 +7,8 @@ public class Game {
 	 public static void main(String[] args) {
 		 Menu Game= new Menu();
 		 Scanner s = new Scanner(System.in);
-		Game.creerPartie(s);
-		Game.findepartie(s);
+		 Game.creerPartie(s);
+		 Game.findepartie(s);
 		
 		
 	 }
