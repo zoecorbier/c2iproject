@@ -2,7 +2,7 @@ package fr.um3.C2iprojet.connectionclient;
 
 import java.util.Scanner;
 
-public class game {
+public class Game {
 
 	 public static void main(String[] args) {
 		 
