@@ -36,48 +36,26 @@ public class NomClient {
 			boolean var=false;
 			
 			while((i<Noms.size()) && (var==false)) {
-				
-				
 				if(Noms.get(i).equals(c)) {
-					System.out.println("Avez-vous deja jou ?");
+					System.out.println("Avez-vous deja joue ?");
 					c=s.nextLine();
-					
 					if(c.equals("oui")) {
-						
 						NomJoueur=Noms.get(i);
 						var=true;
-						System.out.println("Nom saisis avec succes");
-						
-						
-					}
+						System.out.println("Nom saisis avec succes");}
 					else {
-						
 						System.out.println("Ce nom est deja utilise ;(");
-						this.NomListe();
-						
-					}
-					
+						this.NomListe();}
 				}
-				
-				
-				
 				else{
-					
-					
 					i++;
-					
-					
 				}
 			}
-			
 			if(i==Noms.size()) {
 				Noms.add(c);
 				NomJoueur=c;
 				System.out.println("Nom saisis avec succes");
 			}
-			
-			
-			
 		s.close();	
 			
 		}
